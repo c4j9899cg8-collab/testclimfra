@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climfra | Climate Infrastructure Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #34d399, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hidden-details {
+            display: none;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <nav class="fixed w-full z-50 p-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center glass rounded-2xl px-8 py-4">
+            <div class="text-2xl font-bold tracking-tighter">CLIM<span class="text-emerald-500">FRA</span></div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                <a href="#mission" class="hover:text-emerald-400 transition">Mission</a>
+                <a href="#services" class="hover:text-emerald-400 transition">Services</a>
+                <a href="#contact" class="hover:text-emerald-400 transition">Contact</a>
+            </div>
+            <a href="#contact" class="bg-emerald-500 hover:bg-emerald-600 px-5 py-2 rounded-full text-black font-bold transition">Get Started</a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex items-center justify-center text-center px-4">
+        <div class="max-w-4xl">
+            <h1 class="text-6xl md:text-8xl font-black mb-6 leading-tight">
+                Architecting <span class="gradient-text">Climate</span> Resilience.
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
+                Climfra provides digital environmental monitoring and strategic climate solutions for a sustainable tomorrow.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#services" class="bg-white text-black px-8 py-4 rounded-xl font-bold hover:scale-105 transition text-center">Our Solutions</a>
+                <a href="#mission" class="glass px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition text-center text-white">The Mission</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="mission" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="glass p-12 rounded-[3rem] border-emerald-500/20">
+                <h2 class="text-4xl font-bold mb-6 gradient-text">Our Mission</h2>
+                <p class="text-2xl md:text-3xl text-gray-200 leading-relaxed mb-8">
+                    To accelerate the global transition to environmental sustainability by equipping organizations and governments with the digital infrastructure and strategic insight needed to protect our planet.
+                </p>
+                <button onclick="toggleMission()" class="text-emerald-400 font-bold flex items-center gap-2 hover:gap-4 transition-all">
+                    LEARN MORE <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                
+                <div id="mission-details" class="hidden-details mt-10 grid md:grid-cols-2 gap-8 pt-8 border-t border-white/10">
+                    <div>
+                        <h4 class="text-emerald-500 font-bold mb-2 uppercase tracking-wide">Digital First</h4>
+                        <p class="text-gray-400">We leverage high-frequency data and API-driven monitoring to turn environmental variables into actionable business intelligence.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-blue-500 font-bold mb-2 uppercase tracking-wide">Sustainable Growth</h4>
+                        <p class="text-gray-400">We believe infrastructure should breathe. Our goal is to make ecological health a core metric of institutional success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12">Core Solutions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-3xl col-span-1 md:col-span-2">
+                    <i class="fa-solid fa-cloud-sun text-emerald-400 text-3xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Digital Environment Monitoring</h3>
+                    <p class="text-gray-400">Advanced API-driven systems for real-time tracking of environmental shifts and ecological impact reporting.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <i class="fa-solid fa-building-columns text-blue-400 text-3xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Governmental Strategic Support</h3>
+                    <p class="text-gray-400">Partnering with public sectors to implement climate-focused infrastructure and policy-aligned digital tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto glass rounded-[3rem] p-12 overflow-hidden relative">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Let’s build together <br><span class="text-emerald-400">for sustainability.</span></h2>
+                    <p class="text-gray-400 mb-8">Helping organizations allow environmental sustainability through modern digital presence and green infrastructure.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-emerald-500/10 p-3 rounded-lg"><i class="fa-solid fa-envelope text-emerald-500"></i></div>
+                            <span>climfrasolutions@gmail.com</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-500/10 p-3 rounded-lg"><i class="fa-solid fa-phone text-blue-500"></i></div>
+                            <span>+91 95625 22144</span>
+                        </div>
+                    </div>
+                </div>
+
+               <form id="contact-form" action="https://formspree.io/f/maqbgava" method="POST" class="space-y-4">
+    <input type="text" id="name" name="name" placeholder="Organization Name" required class="w-full bg-white/5 border border-white/10 p-4 rounded-xl focus:outline-none focus:border-emerald-500 transition">
+    <input type="email" id="email" name="email" placeholder="Email Address" required class="w-full bg-white/5 border border-white/10 p-4 rounded-xl focus:outline-none focus:border-emerald-500 transition">
+    <textarea id="message" name="message" rows="4" placeholder="How can we help your organization?" required class="w-full bg-white/5 border border-white/10 p-4 rounded-xl focus:outline-none focus:border-emerald-500 transition"></textarea>
+    
+    <button type="submit" id="submit-btn" class="w-full bg-emerald-500 text-black font-bold py-4 rounded-xl hover:bg-emerald-400 transition">Send Message</button>
+    
+    <p id="form-status" class="text-center mt-4 hidden font-medium"></p>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-600 text-sm">
+        &copy; 2026 Climate Infrastructure Solutions PVT. Ltd. All rights reserved.
+    </footer>
+
+    <script>
+ const form = document.getElementById("contact-form");
+    const status = document.getElementById("form-status");
+    const btn = document.getElementById("submit-btn");
+
+    form.addEventListener("submit", async function(event) {
+        event.preventDefault();
+        btn.innerText = "Sending...";
+        btn.disabled = true;
+
+        // 1. DATA PREPARATION
+        const formData = new FormData(form);
+        const name = document.getElementById("form-name").value;
+        const email = document.getElementById("form-email").value;
+        const message = document.getElementById("form-message").value;
+        
+        // YOUR GOOGLE SCRIPT URL HERE
+        const googleScriptUrl = "PASTE_YOUR_WEB_APP_URL_HERE";
+
+        // 2. TRIGGER AUTO-REPLY (Fire and Forget)
+        fetch(googleScriptUrl, {
+            method: "POST",
+            mode: "no-cors", 
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams({ "name": name, "email": email, "message": message })
+        });
+
+        // 3. SEND TO FORMSPREE (The original action)
+        fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        }).then(response => {
+            if (response.ok) {
+                status.innerHTML = "✓ Message sent successfully. Check your email!";
+                status.className = "text-center mt-4 text-emerald-500";
+                status.classList.remove("hidden");
+                form.reset();
+                btn.innerText = "Send Message";
+                btn.disabled = false;
+            } else {
+                throw new Error();
+            }
+        }).catch(error => {
+            status.innerHTML = "Oops! Something went wrong. Please try again.";
+            status.className = "text-center mt-4 text-red-500";
+            status.classList.remove("hidden");
+            btn.innerText = "Send Message";
+            btn.disabled = false;
+        });
+    });
+
+    // Existing Toggle Function
+    function toggleMission() {
+        const details = document.getElementById('mission-details');
+        details.style.display = (details.style.display === "grid") ? "none" : "grid";
+    }
+        
+    </script>
+    <a href="https://wa.me/919562522144?text=Hello%20Climfra%20Team,%20I%27d%20like%20to%20know%20more%20about%20your%20services." 
+       target="_blank" 
+       class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 hover:bg-[#128C7E] transition-all flex items-center justify-center group"
+       aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs group-hover:ml-3 transition-all duration-500 font-bold whitespace-nowrap">
+            Chat with us
+        </span>
+    </a>
+</body>
+</html>
